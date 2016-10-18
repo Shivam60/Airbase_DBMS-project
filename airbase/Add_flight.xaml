@@ -1,0 +1,14 @@
+﻿<Window x:Class="airbase.Add_flight"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:airbase"
+        mc:Ignorable="d"
+        Title="Add_flight" Height="300" Width="300">
+    <Grid>
+        <Label x:Name="label" Content="Add Flight Between Airports" HorizontalAlignment="Left" Margin="50,20,0,0" VerticalAlignment="Top" Width="180"/>
+        <ComboBox x:Name="comboBox" Text="Select Route ID" HorizontalAlignment="Left" Margin="20,70,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
+
+    </Grid>
+</Window>
