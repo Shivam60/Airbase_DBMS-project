@@ -27,6 +27,7 @@
         <Label x:Name="label9" Content="Cell-no" HorizontalAlignment="Left" Margin="37,283,0,0" VerticalAlignment="Top" Width="78"/>
         <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="23" Margin="120,280,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="120,315,0,0" VerticalAlignment="Top" Width="75" Height="25"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="30,371,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
