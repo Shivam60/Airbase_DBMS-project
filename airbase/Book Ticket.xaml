@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="Book_Ticket" Height="732" Width="414">
     <Grid>
-        <Label x:Name="label" Content="Book Your Ticket" HorizontalAlignment="Left" Margin="90,20,0,0" VerticalAlignment="Top" Width="165"/>
+        <Label x:Name="label" Content="Book Your Ticket" HorizontalAlignment="Left" Margin="100,19,0,0" VerticalAlignment="Top" Width="165"/>
         <ComboBox x:Name="comboBox" Text="Select Your Customer ID" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="135" IsEditable="True"/>
         <Button x:Name="button" Content="Click Here If you Dont have one" HorizontalAlignment="Left" Margin="170,60,0,0" VerticalAlignment="Top" Width="180"/>
         <Label x:Name="label1" Content="Passenger Name" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="0.5,0.5">
@@ -34,5 +34,18 @@
         <Label x:Name="label21" Content="Label" HorizontalAlignment="Left" Margin="170,393,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label22" Content="Label" HorizontalAlignment="Left" Margin="170,424,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label23" Content="Label" HorizontalAlignment="Left" Margin="170,450,0,0" VerticalAlignment="Top"/>
+        <ComboBox x:Name="comboBox1" Text="Select Flight ID"  HorizontalAlignment="Left" Margin="20,493,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
+        <Label x:Name="label24" Content="Source Station" HorizontalAlignment="Left" Margin="20,520,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label25" Content="Label" HorizontalAlignment="Left" Margin="170,520,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label26" Content="Destination Station" HorizontalAlignment="Left" Margin="20,551,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label x:Name="label27" Content="Label" HorizontalAlignment="Left" Margin="170,551,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label28" Content="Flight Date" HorizontalAlignment="Left" Margin="20,582,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label29" Content="Aircraft" HorizontalAlignment="Left" Margin="20,613,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label30" Content="Total Fare" HorizontalAlignment="Left" Margin="20,644,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label31" Content="Label" HorizontalAlignment="Left" Margin="170,582,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label32" Content="Label" HorizontalAlignment="Left" Margin="170,613,0,0" VerticalAlignment="Top"/>
+        <Label x:Name="label33" Content="Label" HorizontalAlignment="Left" Margin="170,644,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Book Ticket" HorizontalAlignment="Left" Margin="275,531,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button2" Content="Back" HorizontalAlignment="Left" Margin="275,567,0,0" VerticalAlignment="Top" Width="75"/>
     </Grid>
 </Window>
