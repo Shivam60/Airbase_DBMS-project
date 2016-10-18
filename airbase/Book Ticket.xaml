@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="Book_Ticket" Height="632" Width="414">
+        Title="Book_Ticket" Height="732" Width="414">
     <Grid>
         <Label x:Name="label" Content="Book Your Ticket" HorizontalAlignment="Left" Margin="90,20,0,0" VerticalAlignment="Top" Width="165"/>
         <ComboBox x:Name="comboBox" Text="Select Your Customer ID" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="135" IsEditable="True"/>

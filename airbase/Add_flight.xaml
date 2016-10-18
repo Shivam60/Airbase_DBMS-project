@@ -22,7 +22,7 @@
         <Label x:Name="label4" Content="capacity" HorizontalAlignment="Left" Margin="245,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,0.923" Width="80"/>
         <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="325,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="190,225,0,0" VerticalAlignment="Top" Width="75"/>
-        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="20,263,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="20,263,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
 
     </Grid>
 </Window>

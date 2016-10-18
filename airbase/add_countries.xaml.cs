@@ -23,5 +23,12 @@ namespace airbase
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            Menu men = new Menu();
+            men.Show();
+            this.Close();
+        }
     }
 }
