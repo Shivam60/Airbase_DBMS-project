@@ -73,6 +73,10 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="donaldtrumph.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Flight_Schedule_view.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
@@ -96,6 +100,9 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="donaldtrumph.xaml.cs">
+      <DependentUpon>donaldtrumph.xaml</DependentUpon>
     </Compile>
     <Compile Include="Flight_Schedule_view.xaml.cs">
       <DependentUpon>Flight_Schedule_view.xaml</DependentUpon>
