@@ -1,0 +1,20 @@
+﻿<Window x:Class="airbase.Modify_or_delete_state"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:airbase"
+        mc:Ignorable="d"
+        Title="Modify_or_delete_state" Height="300" Width="300">
+    <Grid>
+        <Label x:Name="label" Content="Modify or delete State" HorizontalAlignment="Left" Margin="74,7,0,0" VerticalAlignment="Top" Width="150"/>
+        <ComboBox x:Name="comboBox" Text="Select Country ID" HorizontalAlignment="Left" Margin="84,52,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
+        <Label x:Name="label2" Content="Country Name" HorizontalAlignment="Left" Margin="39,129,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="149,133,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="104,197,0,0" VerticalAlignment="Top" Width="75"/>
+        <RadioButton x:Name="radioButton" Content="Delete" HorizontalAlignment="Left" Margin="206,92,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Margin="104,222,0,0" VerticalAlignment="Top" Width="75"/>
+        <RadioButton x:Name="radioButton1" Content="Modify" HorizontalAlignment="Left" Margin="39,95,0,0" VerticalAlignment="Top"/>
+
+    </Grid>
+</Window>

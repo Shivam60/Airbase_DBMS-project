@@ -1,0 +1,22 @@
+﻿<Window x:Class="airbase.Book_Ticket"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:airbase"
+        mc:Ignorable="d"
+        Title="Book_Ticket" Height="357" Width="389">
+    <Grid>
+        <Label x:Name="label" Content="Book Your Ticket" HorizontalAlignment="Left" Margin="90,20,0,0" VerticalAlignment="Top" Width="165"/>
+        <ComboBox x:Name="comboBox" Text="Select Your Customer ID" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="135" IsEditable="True"/>
+        <Button x:Name="button" Content="Click Here If you Dont have one" HorizontalAlignment="Left" Margin="170,60,0,0" VerticalAlignment="Top" Width="180"/>
+        <Label x:Name="label1" Content="Passenger Name" HorizontalAlignment="Left" Margin="10,105,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="0.5,0.5">
+        </Label>
+        <Label x:Name="label2" Content="Label" HorizontalAlignment="Left" Margin="170,105,0,0" VerticalAlignment="Top" Width="125"/>
+        <Label x:Name="label3" Content="Passenger Age" HorizontalAlignment="Left" Margin="10,136,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label x:Name="label4" Content="Label" HorizontalAlignment="Left" Margin="170,136,0,0" VerticalAlignment="Top" Width="85"/>
+        <Label x:Name="label5" Content="Address" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="105"/>
+        <Label x:Name="label6" Content="Label" HorizontalAlignment="Left" Margin="170,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0,0.192" Width="85"/>
+
+    </Grid>
+</Window>

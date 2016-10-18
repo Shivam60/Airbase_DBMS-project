@@ -12,7 +12,7 @@
             <ColumnDefinition Width="78*"/>
             <ColumnDefinition Width="21*"/>
         </Grid.ColumnDefinitions>
-        <Label x:Name="label" Content="Welcome To main Menu" HorizontalAlignment="Left" Margin="330,10,0,0" VerticalAlignment="Top" Height="30" Width="160"/>
+        <Label x:Name="label" Content="Welcome To main Menu" HorizontalAlignment="Left" Margin="240,10,0,0" VerticalAlignment="Top" Height="30" Width="160"/>
         <Button x:Name="button" Content="Show Aircraft" HorizontalAlignment="Left" Margin="60,90,0,0" VerticalAlignment="Top" Width="90" Height="25"/>
         <Button x:Name="button1" Content="Add Aircraft" HorizontalAlignment="Left" Margin="60,130,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.8,0" Height="25" Click="button1_Click"/>
         <Button x:Name="button2" Content="View Schedule" HorizontalAlignment="Left" Margin="60,170,0,0" VerticalAlignment="Top" Width="90" Height="25"/>
@@ -20,7 +20,7 @@
         <Button x:Name="button4" Content="Button" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="button5" Content="Cancel Ticket" HorizontalAlignment="Left" Margin="195,132,0,0" VerticalAlignment="Top" Width="85" Height="23"/>
         <Button x:Name="button6" Content="View Employees" HorizontalAlignment="Left" Margin="330,90,0,0" VerticalAlignment="Top" Width="110" Height="23"/>
-        <Button x:Name="button7" Content="Add Employee" HorizontalAlignment="Left" Margin="330,130,0,0" VerticalAlignment="Top" Width="110"/>
+        <Button x:Name="button7" Content="Add Employee" HorizontalAlignment="Left" Margin="330,130,0,0" VerticalAlignment="Top" Width="110" Click="button7_Click"/>
         <Button x:Name="button8" Content="Remove Employee" HorizontalAlignment="Left" Margin="330,175,0,0" VerticalAlignment="Top" Width="110"/>
 
     </Grid>

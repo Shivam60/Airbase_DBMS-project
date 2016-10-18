@@ -65,11 +65,27 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="add_countries.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="Add_flight.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ADD_State.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AIrFare.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Book Ticket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="employee_signup.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -87,8 +103,14 @@
     <Compile Include="Add_aircraft.xaml.cs">
       <DependentUpon>Add_aircraft.xaml</DependentUpon>
     </Compile>
+    <Compile Include="add_countries.xaml.cs">
+      <DependentUpon>add_countries.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Add_flight.xaml.cs">
       <DependentUpon>Add_flight.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_State.xaml.cs">
+      <DependentUpon>ADD_State.xaml</DependentUpon>
     </Compile>
     <Compile Include="AIrFare.xaml.cs">
       <DependentUpon>AIrFare.xaml</DependentUpon>
@@ -96,6 +118,12 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Book Ticket.xaml.cs">
+      <DependentUpon>Book Ticket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="employee_signup.xaml.cs">
+      <DependentUpon>employee_signup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Flight_Schedule_view.xaml.cs">
       <DependentUpon>Flight_Schedule_view.xaml</DependentUpon>
@@ -107,10 +135,31 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Modify_or_delete_country.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Modify_or_delete_state.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="passenger_signup.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Menu.xaml.cs">
       <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modify_or_delete_country.xaml.cs">
+      <DependentUpon>Modify_or_delete_country.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Modify_or_delete_state.xaml.cs">
+      <DependentUpon>Modify_or_delete_state.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="passenger_signup.xaml.cs">
+      <DependentUpon>passenger_signup.xaml</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs">
       <SubType>Code</SubType>

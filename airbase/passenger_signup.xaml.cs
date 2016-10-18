@@ -15,25 +15,13 @@ using System.Windows.Shapes;
 namespace airbase
 {
     /// <summary>
-    /// Interaction logic for Menu.xaml
+    /// Interaction logic for passenger_signup.xaml
     /// </summary>
-    public partial class Menu : Window
+    public partial class passenger_signup : Window
     {
-        public Menu()
+        public passenger_signup()
         {
             InitializeComponent();
-        }
-
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-            Add_aircraft men = new Add_aircraft();
-            men.Show();
-            this.Close();
-        }
-
-        private void button7_Click(object sender, RoutedEventArgs e)
-        {
-
         }
     }
 }
