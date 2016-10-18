@@ -13,6 +13,7 @@
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="135,75,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="135,109,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="95,150,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="95,175,0,0" VerticalAlignment="Top" Width="75"/>
 
     </Grid>
 </Window>
