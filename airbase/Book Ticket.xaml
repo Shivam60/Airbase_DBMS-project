@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="Book_Ticket" Height="357" Width="389">
+        Title="Book_Ticket" Height="732" Width="414">
     <Grid>
         <Label x:Name="label" Content="Book Your Ticket" HorizontalAlignment="Left" Margin="90,20,0,0" VerticalAlignment="Top" Width="165"/>
         <ComboBox x:Name="comboBox" Text="Select Your Customer ID" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="135" IsEditable="True"/>
@@ -17,6 +17,9 @@
         <Label x:Name="label4" Content="Label" HorizontalAlignment="Left" Margin="170,136,0,0" VerticalAlignment="Top" Width="85"/>
         <Label x:Name="label5" Content="Address" HorizontalAlignment="Left" Margin="10,167,0,0" VerticalAlignment="Top" Width="105"/>
         <Label x:Name="label6" Content="Label" HorizontalAlignment="Left" Margin="170,167,0,0" VerticalAlignment="Top" RenderTransformOrigin="0,0.192" Width="85"/>
+        <Label x:Name="label7" Content="Nationality" HorizontalAlignment="Left" Margin="10,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,1.038"/>
+        <Label x:Name="label8" Content="Label" HorizontalAlignment="Left" Margin="170,198,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,-0.038"/>
+        <Label x:Name="label9" Content="Label" HorizontalAlignment="Left" Margin="10,229,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
