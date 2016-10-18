@@ -13,7 +13,8 @@
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="94,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="94,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button" Content="GO" HorizontalAlignment="Left" Margin="94,126,0,0" VerticalAlignment="Top" Width="54" Click="button_Click"/>
-        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="78,186,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="228,228,0,0" VerticalAlignment="Top" Width="54" Click="button1_Click"/>
+        <Button x:Name="button2" Content="New user's signup here" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="141"/>
 
     </Grid>
 </Window>

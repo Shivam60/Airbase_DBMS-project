@@ -15,7 +15,7 @@
         <RadioButton x:Name="radioButton" Content="Delete" HorizontalAlignment="Left" Margin="207,110,0,0" VerticalAlignment="Top"/>
         <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Margin="105,240,0,0" VerticalAlignment="Top" Width="75"/>
         <RadioButton x:Name="radioButton1" Content="Modify" HorizontalAlignment="Left" Margin="40,113,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button2" Content="Back" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button2" Content="Back" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
 
     </Grid>
 </Window>
