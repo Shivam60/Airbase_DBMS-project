@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="ADD_State" Height="300" Width="300">
+        Title="ADD_State" Height="300" Width="300"
+        Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="label" Content="Add State" HorizontalAlignment="Left" Margin="105,20,0,0" VerticalAlignment="Top" Width="85"/>
         <Label x:Name="label1" Content="State ID" HorizontalAlignment="Left" Margin="30,90,0,0" VerticalAlignment="Top" Height="30" Width="105"/>
@@ -14,7 +15,7 @@
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="140,124,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="95,210,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
         <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="140,165,0,0" VerticalAlignment="Top" Width="120"/>
-        <ComboBox x:Name="comboBox" Text="Country by ID" HorizontalAlignment="Left" Margin="20,169,0,0" VerticalAlignment="Top" Width="115" IsEditable="True"/>
+        <ComboBox x:Name="comboBox" Text="Country by ID" HorizontalAlignment="Left" Margin="20,169,0,0" VerticalAlignment="Top" Width="115" IsEditable="True" SelectionChanged="comboBox_SelectionChanged"/>
         <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
         <Button x:Name="button2" Content="Add country" HorizontalAlignment="Left" Margin="207,239,0,0" VerticalAlignment="Top" Width="75"/>
 

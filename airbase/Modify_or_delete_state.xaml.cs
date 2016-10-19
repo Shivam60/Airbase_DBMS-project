@@ -11,7 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Configuration;
+using System.Data;
+using MySql.Data.MySqlClient;
 namespace airbase
 {
     /// <summary>
@@ -23,12 +25,130 @@ namespace airbase
         {
             InitializeComponent();
         }
-
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             Menu men = new Menu();
             men.Show();
             this.Close();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            if (radioButton.IsChecked == true)
+            {
+                try
+                {
+                    conn.Open();
+                    int ctid = Convert.ToInt32(comboBox.SelectedItem);
+                    string cntnm = textBox1.Text;
+                    MySqlCommand cmd = new MySqlCommand("update state set stateName= '" + cntnm + "' where CtID=" + ctid, conn);
+                    MySqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        var valen = dr["CtID"];
+                        if (!comboBox.Items.Contains(valen))
+                        {
+                            comboBox.Items.Add(valen);
+                        }
+                    }
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select Modify Button First");
+            }
+        }
+
+        private void button2_Loaded(object sender, RoutedEventArgs e)
+        {
+            if (radioButton1.IsChecked == true)
+            {
+                try
+                {
+                    conn.Open();
+                    int ctid = Convert.ToInt32(comboBox.SelectedItem);
+                    MySqlCommand cmd = new MySqlCommand("delete from countires where ctid=" + ctid, conn);
+                    MySqlDataReader dr = cmd.ExecuteReader();
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select Delete Button First");
+            }
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("Select * from countries", conn);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                while (dr.Read())
+                {
+                    var valen = dr["CtID"];
+                    if (!comboBox.Items.Contains(valen))
+                    {
+                        comboBox.Items.Add(valen);
+                    }
+                }
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void comboBox_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                int ctid = Convert.ToInt32(comboBox.SelectedItem);
+                MySqlCommand cmd = new MySqlCommand("Select * from state where StID=" + ctid + ";", conn);
+                MySqlDataReader dr = cmd.ExecuteReader();
+                dr.Read();
+                textBox1.Text = dr["StateName"].ToString();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void textBox1_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

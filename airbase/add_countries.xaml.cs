@@ -39,9 +39,8 @@ namespace airbase
             {
                 conn.Open();
                 int id = Convert.ToInt32(textBox.Text);
-                string st= textBox1.Text;
-                string cnt=label2.Content.ToString();
-                string scmd = "insert into state values( "+id+",'"+st+"','"+cnt+");";
+                string cnt= textBox1.Text;
+                string scmd = "insert into countrues values( "+id+",'"+cnt+"');";
                 //MessageBox.Show(scmd);
                 MySqlCommand cmd = new MySqlCommand(scmd, conn);
                 MySqlDataReader dr = cmd.ExecuteReader();
@@ -57,5 +56,6 @@ namespace airbase
                 conn.Close();
             }
         }
+
     }
 }

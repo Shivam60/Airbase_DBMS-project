@@ -39,6 +39,8 @@
     <Reference Include="System" />
     <Reference Include="System.configuration" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -48,9 +50,11 @@
     <Reference Include="System.Xaml">
       <RequiredTargetFramework>4.0</RequiredTargetFramework>
     </Reference>
+    <Reference Include="UIAutomationProvider" />
     <Reference Include="WindowsBase" />
     <Reference Include="PresentationCore" />
     <Reference Include="PresentationFramework" />
+    <Reference Include="WindowsFormsIntegration" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -77,11 +81,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="Aircraft_view.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="AIrFare.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Book Ticket.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Cancel_ticket1.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -112,6 +124,9 @@
     <Compile Include="ADD_State.xaml.cs">
       <DependentUpon>ADD_State.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Aircraft_view.xaml.cs">
+      <DependentUpon>Aircraft_view.xaml</DependentUpon>
+    </Compile>
     <Compile Include="AIrFare.xaml.cs">
       <DependentUpon>AIrFare.xaml</DependentUpon>
     </Compile>
@@ -121,6 +136,9 @@
     </Compile>
     <Compile Include="Book Ticket.xaml.cs">
       <DependentUpon>Book Ticket.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Cancel_ticket1.xaml.cs">
+      <DependentUpon>Cancel_ticket1.xaml</DependentUpon>
     </Compile>
     <Compile Include="employee_signup.xaml.cs">
       <DependentUpon>employee_signup.xaml</DependentUpon>
