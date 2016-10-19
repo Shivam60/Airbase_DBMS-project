@@ -7,22 +7,22 @@
         mc:Ignorable="d"
         Title="passenger_signup" Height="550" Width="500">
     <Grid RenderTransformOrigin="0.569,0.316">
-        <Label x:Name="label" Content="Book Your Ticket" HorizontalAlignment="Left" Margin="90,20,0,0" VerticalAlignment="Top" Width="165"/>
-        <ComboBox x:Name="comboBox" Text="Select Your Customer ID" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="135" IsEditable="True"/>
-        <Button x:Name="button" Content="Click Here If you Dont have one" HorizontalAlignment="Left" Margin="170,60,0,0" VerticalAlignment="Top" Width="180"/>
-        <Label x:Name="label1" Content="Passenger Name" HorizontalAlignment="Left" Margin="0,108,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="0.5,0.5">
+        <Label x:Name="label" Content="Book Your Ticket" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" Width="159" FontSize="18" FontWeight="Bold"/>
+        <ComboBox x:Name="comboBox" Text="Select Your Customer ID" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="145" IsEditable="True" FontWeight="Bold"/>
+        <Button x:Name="button" Content="Click Here If you Dont have one" HorizontalAlignment="Left" Margin="170,60,0,0" VerticalAlignment="Top" Width="213" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label1" Content="Passenger Name" HorizontalAlignment="Left" Margin="0,108,0,0" VerticalAlignment="Top" Width="105" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="14">
         </Label>
-        <Label x:Name="label3" Content="Passenger Age" HorizontalAlignment="Left" Margin="0,138,0,0" VerticalAlignment="Top" Width="105"/>
-        <Label x:Name="label5" Content="Address" HorizontalAlignment="Left" Margin="0,166,0,0" VerticalAlignment="Top" Width="105"/>
-        <Label x:Name="label7" Content="Nationality" HorizontalAlignment="Left" Margin="0,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,1.038" Width="95"/>
-        <Label x:Name="label9" Content="Contact Details" HorizontalAlignment="Left" Margin="90,229,0,0" VerticalAlignment="Top"/>
-        <Label x:Name="label10" Content="Contact ID " HorizontalAlignment="Left" Margin="5,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="0,0.385" Width="95"/>
-        <Label x:Name="label12" Content="Email" HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top" Width="85"/>
-        <Label x:Name="label13" Content="Cell" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Width="95"/>
-        <Label x:Name="label14" Content="Tel-Phone" HorizontalAlignment="Left" Margin="5,362,0,0" VerticalAlignment="Top" Width="95"/>
-        <Label x:Name="label15" Content="Street" HorizontalAlignment="Left" Margin="10,393,0,0" VerticalAlignment="Top" Width="85"/>
-        <Label x:Name="label16" Content="State" HorizontalAlignment="Left" Margin="10,424,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.789,0.423"/>
-        <Label x:Name="label17" Content="Country" HorizontalAlignment="Left" Margin="10,450,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.132,0.192"/>
+        <Label x:Name="label3" Content="Passenger Age" HorizontalAlignment="Left" Margin="0,138,0,0" VerticalAlignment="Top" Width="105" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label5" Content="Address" HorizontalAlignment="Left" Margin="0,166,0,0" VerticalAlignment="Top" Width="105" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label7" Content="Nationality" HorizontalAlignment="Left" Margin="0,190,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,1.038" Width="95" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label9" Content="Contact Details" HorizontalAlignment="Left" Margin="90,229,0,0" VerticalAlignment="Top" FontWeight="Bold" FontSize="16"/>
+        <Label x:Name="label10" Content="Contact ID " HorizontalAlignment="Left" Margin="5,273,0,0" VerticalAlignment="Top" RenderTransformOrigin="0,0.385" Width="95" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label12" Content="Email" HorizontalAlignment="Left" Margin="10,299,0,0" VerticalAlignment="Top" Width="85" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label13" Content="Cell" HorizontalAlignment="Left" Margin="10,325,0,0" VerticalAlignment="Top" Width="95" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label14" Content="Tel-Phone" HorizontalAlignment="Left" Margin="5,362,0,0" VerticalAlignment="Top" Width="95" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label15" Content="Street" HorizontalAlignment="Left" Margin="10,393,0,0" VerticalAlignment="Top" Width="85" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label16" Content="State" HorizontalAlignment="Left" Margin="10,424,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.789,0.423" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label17" Content="Country" HorizontalAlignment="Left" Margin="10,450,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.132,0.192" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="105,111,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="105,138,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="105,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
@@ -34,7 +34,7 @@
         <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="23" Margin="105,393,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox9" HorizontalAlignment="Left" Height="23" Margin="105,424,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox10" HorizontalAlignment="Left" Height="23" Margin="105,450,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button1" Content="Go" HorizontalAlignment="Left" Margin="105,489,0,0" VerticalAlignment="Top" Width="50"/>
+        <Button x:Name="button1" Content="Go" HorizontalAlignment="Left" Margin="105,489,0,0" VerticalAlignment="Top" Width="50" FontWeight="Bold" FontSize="16"/>
 
     </Grid>
 </Window>

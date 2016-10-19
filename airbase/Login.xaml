@@ -7,14 +7,14 @@
         mc:Ignorable="d"
         Title="Login" Height="300" Width="300">
     <Grid>
-        <Label x:Name="label" Content="Login Form" HorizontalAlignment="Left" Height="28" Margin="99,17,0,0" VerticalAlignment="Top" Width="72"/>
-        <Label x:Name="label1" Content="Username" HorizontalAlignment="Left" Margin="19,64,0,0" VerticalAlignment="Top" Width="75"/>
-        <Label x:Name="label2" Content="Password" HorizontalAlignment="Left" Margin="19,95,0,0" VerticalAlignment="Top" Width="75"/>
+        <Label x:Name="label" Content="Login Form" HorizontalAlignment="Left" Height="33" Margin="99,17,0,0" VerticalAlignment="Top" Width="115" FontWeight="Bold" FontSize="18"/>
+        <Label x:Name="label1" Content="Username" HorizontalAlignment="Left" Margin="19,64,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
+        <Label x:Name="label2" Content="Password" HorizontalAlignment="Left" Margin="19,95,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="94,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="94,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="GO" HorizontalAlignment="Left" Margin="94,126,0,0" VerticalAlignment="Top" Width="54" Click="button_Click"/>
-        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="228,228,0,0" VerticalAlignment="Top" Width="54" Click="button1_Click"/>
-        <Button x:Name="button2" Content="New user's signup here" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="141"/>
+        <Button x:Name="button" Content="GO" HorizontalAlignment="Left" Margin="94,126,0,0" VerticalAlignment="Top" Width="54" Click="button_Click" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="216,228,0,0" VerticalAlignment="Top" Width="66" Click="button1_Click" FontSize="18" FontWeight="Bold"/>
+        <Button x:Name="button2" Content="New user's signup here" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="163" FontWeight="Bold" Height="28" FontSize="14"/>
 
     </Grid>
 </Window>

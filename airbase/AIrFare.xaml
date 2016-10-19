@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="AIrFare" Height="300" Width="300">
     <Grid>
-        <Label x:Name="label" Content="Manage AirFare" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.5,0.5">
+        <Label x:Name="label" Content="Manage AirFare" HorizontalAlignment="Left" Margin="85,10,0,0" VerticalAlignment="Top" Width="144" RenderTransformOrigin="0.5,0.5" FontWeight="Bold" FontSize="18">
             <Label.RenderTransform>
                 <TransformGroup>
                     <ScaleTransform/>
@@ -17,16 +17,16 @@
                 </TransformGroup>
             </Label.RenderTransform>
         </Label>
-        <ComboBox x:Name="comboBox" Text="Select Airfare ID" HorizontalAlignment="Left" Margin="20,45,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
-        <Label x:Name="label1" Content="Route ID" HorizontalAlignment="Left" Margin="20,90,0,0" VerticalAlignment="Top" Width="55"/>
-        <Label x:Name="label2" Content="Fare" HorizontalAlignment="Left" Margin="20,121,0,0" VerticalAlignment="Top" Width="65"/>
-        <Label x:Name="label3" Content="FSC" HorizontalAlignment="Left" Margin="20,152,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0" Width="65"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="85,125,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="85,156,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="85,190,0,0" VerticalAlignment="Top" Width="55"/>
-        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
-        <ComboBox x:Name="comboBox1" Text="Select Route ID" HorizontalAlignment="Left" Margin="85,90,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
-        <Button x:Name="button2" Content="New Route" HorizontalAlignment="Left" Margin="218,91,0,0" VerticalAlignment="Top" Width="64"/>
+        <ComboBox x:Name="comboBox" Text="Select Airfare ID" HorizontalAlignment="Left" Margin="0,45,0,0" VerticalAlignment="Top" Width="140" IsEditable="True" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label1" Content="Route ID" HorizontalAlignment="Left" Margin="0,90,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label2" Content="Fare" HorizontalAlignment="Left" Margin="20,121,0,0" VerticalAlignment="Top" Width="65" FontWeight="Bold" FontSize="14"/>
+        <Label x:Name="label3" Content="FSC" HorizontalAlignment="Left" Margin="20,152,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.526,0" Width="65" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="70,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="70,150,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="85,190,0,0" VerticalAlignment="Top" Width="55" FontWeight="Bold" FontSize="16"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click" FontWeight="Bold" FontSize="16"/>
+        <ComboBox x:Name="comboBox1" Text="Select Route ID" HorizontalAlignment="Left" Margin="70,90,0,0" VerticalAlignment="Top" Width="125" IsEditable="True" FontWeight="Bold" FontSize="14"/>
+        <Button x:Name="button2" Content="New Route" HorizontalAlignment="Left" Margin="200,91,0,0" VerticalAlignment="Top" Width="92" FontWeight="Bold" FontSize="16"/>
 
     </Grid>
 </Window>
