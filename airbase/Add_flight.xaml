@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="Add_flight" Height="397" Width="469">
+        Title="Add_flight" Height="397" Width="469"
+        Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="label" Content="Add Flight Between Airports" HorizontalAlignment="Left" Margin="135,19,0,0" VerticalAlignment="Top" Width="180"/>
         <ComboBox x:Name="comboBox" Text="Select Route ID" HorizontalAlignment="Left" Margin="20,82,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>

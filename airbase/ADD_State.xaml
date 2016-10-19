@@ -12,7 +12,7 @@
         <Label x:Name="label2" Content="State Name" HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" Width="95"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="140,90,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="140,124,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="95,210,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="95,210,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
         <Label x:Name="label3" Content="Label" HorizontalAlignment="Left" Margin="140,165,0,0" VerticalAlignment="Top" Width="120"/>
         <ComboBox x:Name="comboBox" Text="Country by ID" HorizontalAlignment="Left" Margin="20,169,0,0" VerticalAlignment="Top" Width="115" IsEditable="True"/>
         <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>

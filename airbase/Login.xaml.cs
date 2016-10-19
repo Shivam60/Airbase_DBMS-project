@@ -14,7 +14,7 @@ using System.Configuration;
 using System.Data;
 using MySql.Data.MySqlClient;
 
-namespace Inventory_Management_for_textile_Industry
+namespace airbase
 {
     /// <summary>
     /// Interaction logic for Login.xaml
@@ -25,7 +25,7 @@ namespace Inventory_Management_for_textile_Industry
         {
             InitializeComponent();
         }
-        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=wpf");
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
         private void button_Click(object sender, RoutedEventArgs e)
         {
             try

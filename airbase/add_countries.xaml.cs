@@ -11,7 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Configuration;
+using System.Data;
+using MySql.Data.MySqlClient;
 namespace airbase
 {
     /// <summary>
@@ -23,12 +25,37 @@ namespace airbase
         {
             InitializeComponent();
         }
-
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Menu men = new Menu();
             men.Show();
             this.Close();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                int id = Convert.ToInt32(textBox.Text);
+                string st= textBox1.Text;
+                string cnt=label2.Content.ToString();
+                string scmd = "insert into state values( "+id+",'"+st+"','"+cnt+");";
+                //MessageBox.Show(scmd);
+                MySqlCommand cmd = new MySqlCommand(scmd, conn);
+                MySqlDataReader dr = cmd.ExecuteReader();
+
+                MessageBox.Show("Successfull feed");
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
         }
     }
 }
