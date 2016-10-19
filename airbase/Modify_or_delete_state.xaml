@@ -5,15 +5,16 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="Modify_or_delete_state" Height="300" Width="300">
+        Title="Modify_or_delete_state" Height="300" Width="300"
+        Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="label" Content="Modify or delete State" HorizontalAlignment="Left" Margin="74,7,0,0" VerticalAlignment="Top" Width="150"/>
-        <ComboBox x:Name="comboBox" Text="Select Country ID" HorizontalAlignment="Left" Margin="84,52,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
-        <Label x:Name="label2" Content="Country Name" HorizontalAlignment="Left" Margin="39,129,0,0" VerticalAlignment="Top" Width="95"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="149,133,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="104,197,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="comboBox" Text="Select State ID" HorizontalAlignment="Left" Margin="84,52,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="comboBox_SelectionChanged"/>
+        <Label x:Name="label2" Content="State Name" HorizontalAlignment="Left" Margin="39,129,0,0" VerticalAlignment="Top" Width="95"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="149,133,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120" TextChanged="textBox1_TextChanged"/>
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="104,197,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
         <RadioButton x:Name="radioButton" Content="Delete" HorizontalAlignment="Left" Margin="206,92,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Margin="104,222,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Margin="104,222,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
         <RadioButton x:Name="radioButton1" Content="Modify" HorizontalAlignment="Left" Margin="39,95,0,0" VerticalAlignment="Top"/>
         <Button x:Name="button2" Content="Back" HorizontalAlignment="Left" Margin="10,227,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
 

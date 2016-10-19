@@ -5,16 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="Modify_or_delete_country" Height="300" Width="300">
+        Title="Modify_or_delete_country" Height="300" Width="300"
+        Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="label" Content="Modify or delete country" HorizontalAlignment="Left" Margin="75,25,0,0" VerticalAlignment="Top" Width="150"/>
-        <ComboBox x:Name="comboBox" Text="Select Country ID" HorizontalAlignment="Left" Margin="85,70,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
+        <ComboBox x:Name="comboBox" Text="Select Country ID" HorizontalAlignment="Left" Margin="85,70,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="comboBox_SelectionChanged"/>
         <Label x:Name="label2" Content="Country Name" HorizontalAlignment="Left" Margin="40,145,0,0" VerticalAlignment="Top" Width="95"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="150,149,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="105,215,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="105,215,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
         <RadioButton x:Name="radioButton" Content="Delete" HorizontalAlignment="Left" Margin="207,110,0,0" VerticalAlignment="Top"/>
-        <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Margin="105,240,0,0" VerticalAlignment="Top" Width="75"/>
-        <RadioButton x:Name="radioButton1" Content="Modify" HorizontalAlignment="Left" Margin="40,113,0,0" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="Delete" HorizontalAlignment="Left" Margin="105,240,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <RadioButton x:Name="radioButton1" Content="Modify" HorizontalAlignment="Left" Margin="40,113,0,0" VerticalAlignment="Top" Checked="radioButton1_Checked"/>
         <Button x:Name="button2" Content="Back" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="75" Click="button2_Click"/>
 
     </Grid>

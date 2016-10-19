@@ -9,21 +9,29 @@
         Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="label" Content="Add Flight Between Airports" HorizontalAlignment="Left" Margin="135,19,0,0" VerticalAlignment="Top" Width="180"/>
-        <ComboBox x:Name="comboBox" Text="Select Route ID" HorizontalAlignment="Left" Margin="20,82,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
-        <Label x:Name="label1" Content="Route ID" HorizontalAlignment="Left" Margin="20,109,0,0" VerticalAlignment="Top" Width="80"/>
-        <Label x:Name="label2" Content="Source Airport" HorizontalAlignment="Left" Margin="20,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.395,0" Width="95"/>
-        <Label x:Name="label3" Content="Destination Airport" HorizontalAlignment="Left" Margin="10,155,0,0" VerticalAlignment="Top" Width="115"/>
-        <Label x:Name="label6" Content="Aircraft no" HorizontalAlignment="Left" Margin="245,135,0,0" VerticalAlignment="Top" Width="75"/>
-        <ComboBox x:Name="comboBox1" Text="Select Aircraft ID" HorizontalAlignment="Left" Margin="230,82,0,0" VerticalAlignment="Top" Width="120" IsEditable="True"/>
-        <Label x:Name="label7" Content="Aircraft Name" HorizontalAlignment="Left" Margin="230,109,0,0" VerticalAlignment="Top" Width="95"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="325,109,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="325,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="125,135,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="125,159,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="100"/>
-        <Label x:Name="label4" Content="capacity" HorizontalAlignment="Left" Margin="245,161,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.921,0.923" Width="80"/>
-        <TextBox x:Name="textBox4" HorizontalAlignment="Left" Height="23" Margin="325,163,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <ComboBox x:Name="comboBox" Text="Select Route ID" HorizontalAlignment="Left" Margin="20,82,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="comboBox_SelectionChanged"/>
+        <Label x:Name="label1" Content="Route Code" HorizontalAlignment="Left" Margin="20,109,0,0" VerticalAlignment="Top" Width="80"/>
+        <Label x:Name="label2" Content="Source Airport" HorizontalAlignment="Left" Margin="20,135,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.395,0" Width="95">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform AngleX="-2.045"/>
+                    <RotateTransform/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <Label x:Name="label3" Content="Destination Airport" HorizontalAlignment="Left" Margin="20,158,0,0" VerticalAlignment="Top" Width="115"/>
+        <Label x:Name="label6" Content="Capacity" HorizontalAlignment="Left" Margin="230,135,0,0" VerticalAlignment="Top" Width="75"/>
+        <ComboBox x:Name="comboBox1" Text="Select Aircraft ID" HorizontalAlignment="Left" Margin="230,82,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="comboBox1_SelectionChanged"/>
+        <Label x:Name="label7" Content="Aircraft No" HorizontalAlignment="Left" Margin="230,109,0,0" VerticalAlignment="Top" Width="95"/>
         <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="190,225,0,0" VerticalAlignment="Top" Width="75"/>
         <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="20,263,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Label x:Name="label5" Content="Label" HorizontalAlignment="Left" Margin="135,109,0,0" VerticalAlignment="Top" Width="100"/>
+        <Label x:Name="label8" Content="Label" HorizontalAlignment="Left" Margin="135,132,0,0" VerticalAlignment="Top" Width="95"/>
+        <Label x:Name="label9" Content="Label" HorizontalAlignment="Left" Margin="135,155,0,0" VerticalAlignment="Top" Width="90"/>
+        <Label x:Name="label10" Content="Label" HorizontalAlignment="Left" Margin="342,109,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.395,-0.077"/>
+        <Label x:Name="label11" Content="Label" HorizontalAlignment="Left" Margin="342,132,0,0" VerticalAlignment="Top"/>
 
     </Grid>
 </Window>
