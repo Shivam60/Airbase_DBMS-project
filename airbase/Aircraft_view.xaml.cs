@@ -11,6 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Configuration;
 
 namespace airbase
 {
@@ -22,6 +25,33 @@ namespace airbase
         public Aircraft_view()
         {
             InitializeComponent();
+        }
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("Select * from aircraft", conn);
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adp.Fill(ds, "LoadDataBinding");
+                dataGrid.DataContext = ds;
+                conn.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

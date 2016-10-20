@@ -14,36 +14,26 @@ using System.Windows.Shapes;
 using System.Data;
 using MySql.Data.MySqlClient;
 using System.Configuration;
+
 namespace airbase
 {
     /// <summary>
-    /// Interaction logic for Flight_Schedule_view.xaml
+    /// Interaction logic for country_view.xaml
     /// </summary>
-    public partial class Flight_Schedule_view : Window
+    public partial class country_view : Window
     {
-        public Flight_Schedule_view()
+        public country_view()
         {
             InitializeComponent();
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void button_Click(object sender, RoutedEventArgs e)
-        {
-            Menu men = new Menu();
-            men.Show();
-            this.Close();
-        }
-        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
             try
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("Select * from flight_schedule", conn);
+                MySqlCommand cmd = new MySqlCommand("Select * from country", conn);
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adp.Fill(ds, "LoadDataBinding");
@@ -58,6 +48,11 @@ namespace airbase
             {
                 conn.Close();
             }
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }

@@ -5,17 +5,17 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="Add_Route" Height="300" Width="300">
+        Title="Add_Route" Height="304" Width="418">
     <Grid Margin="-1,2,1,-2">
         <Label x:Name="label" Content="Add Route" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold"/>
         <Label x:Name="label1" Content="Route ID" HorizontalAlignment="Left" Margin="20,55,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="label2" Content="Airport Name" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Width="100" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="label3" Content="Destination" HorizontalAlignment="Left" Margin="20,117,0,0" VerticalAlignment="Top" Width="90" FontWeight="Bold" FontSize="14"/>
-        <Label x:Name="label4" Content="Route Code" HorizontalAlignment="Left" Margin="20,148,0,0" VerticalAlignment="Top" Width="80" RenderTransformOrigin="0.125,0.654" FontWeight="Bold" FontSize="14"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="115,58,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="115,90,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="115,121,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="115,152,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <Label x:Name="label4" Content="Route Code" HorizontalAlignment="Left" Margin="20,148,0,0" VerticalAlignment="Top" Width="100" RenderTransformOrigin="0.125,0.654" FontWeight="Bold" FontSize="14"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="170,60,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="170,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox2" HorizontalAlignment="Left" Height="23" Margin="170,123,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox3" HorizontalAlignment="Left" Height="23" Margin="170,154,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button" Content="Save" HorizontalAlignment="Left" Margin="115,199,0,0" VerticalAlignment="Top" Width="65" Click="button_Click" Height="25" FontWeight="Bold" FontSize="16"/>
         <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="10,239,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click" FontSize="16" FontWeight="Bold"/>
 
