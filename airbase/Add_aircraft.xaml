@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Add_aircraft" Height="300" Width="300">
     <Grid>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="292"/>
         <Label x:Name="label" Content="Welcome TO add Aircraft Wizard" HorizontalAlignment="Left" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="18" RenderTransformOrigin="0.335,0.529" Width="292" FontWeight="Bold"/>
         <Label x:Name="label1" Content="Select AID" HorizontalAlignment="Left" Margin="16,47,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>
         <Label x:Name="label2" Content="AcNumber" HorizontalAlignment="Left" Margin="16,73,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Bold"/>

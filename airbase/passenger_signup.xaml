@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="passenger_signup" Height="550" Width="500">
     <Grid RenderTransformOrigin="0.569,0.316">
+        <WindowsFormsHost HorizontalAlignment="Left" Height="519" VerticalAlignment="Top" Width="492"/>
         <Label x:Name="label" Content="Book Your Ticket" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" Width="159" FontSize="18" FontWeight="Bold"/>
         <ComboBox x:Name="comboBox" Text="Select Your Customer ID" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" Width="145" IsEditable="True" FontWeight="Bold"/>
         <Button x:Name="button" Content="Click Here If you Dont have one" HorizontalAlignment="Left" Margin="170,60,0,0" VerticalAlignment="Top" Width="213" FontWeight="Bold" FontSize="14"/>
