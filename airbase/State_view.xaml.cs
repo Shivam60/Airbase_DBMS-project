@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Data;
+using MySql.Data.MySqlClient;
 namespace airbase
 {
     /// <summary>
@@ -23,7 +24,7 @@ namespace airbase
         {
             InitializeComponent();
         }
-
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=dharmendra;Database=chawlaairbase");
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
 

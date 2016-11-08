@@ -11,7 +11,8 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Data;
+using MySql.Data.MySqlClient;
 namespace airbase
 {
     /// <summary>
@@ -26,7 +27,9 @@ namespace airbase
 
         private void button2_Click(object sender, RoutedEventArgs e)
         {
-
+            Menu men = new Menu();
+            men.Show();
+            this.Close();
         }
     }
 }
