@@ -27,6 +27,28 @@ namespace airbase
         MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=dharmendra;Database=chawlaairbase");
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
+            try
+            {
+                conn.Open();
+                MySqlCommand cmd = new MySqlCommand("Select * from state", conn);
+                MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
+                DataSet ds = new DataSet();
+                adp.Fill(ds, "LoadDataBinding");
+                dataGrid.DataContext = ds;
+                conn.Close();
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void WindowsFormsHost_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
 
         }
     }

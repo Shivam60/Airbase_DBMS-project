@@ -8,7 +8,7 @@
         Title="Modify_or_delete_state" Height="300" Width="300"
         Loaded="Window_Loaded">
     <Grid>
-        <WindowsFormsHost HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="292"/>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="292" ChildChanged="WindowsFormsHost_ChildChanged"/>
         <Label x:Name="label" Content="Modify or delete State" HorizontalAlignment="Left" Margin="39,7,0,0" VerticalAlignment="Top" Width="204" FontSize="18" FontWeight="Bold"/>
         <ComboBox x:Name="comboBox" Text="Select State ID" HorizontalAlignment="Left" Margin="84,52,0,0" VerticalAlignment="Top" Width="120" IsEditable="True" SelectionChanged="comboBox_SelectionChanged" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="label2" Content="State Name" HorizontalAlignment="Left" Margin="39,129,0,0" VerticalAlignment="Top" Width="95" FontWeight="Bold" FontSize="14"/>

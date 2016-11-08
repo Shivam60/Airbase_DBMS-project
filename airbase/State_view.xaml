@@ -8,6 +8,7 @@
         Title="State_view" Height="332" Width="604"
         Loaded="Window_Loaded">
     <Grid>
-        <WindowsFormsHost HorizontalAlignment="Left" Height="301" VerticalAlignment="Top" Width="596"/>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="301" VerticalAlignment="Top" Width="596" ChildChanged="WindowsFormsHost_ChildChanged"/>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding LoadDataBinding}" IsSynchronizedWithCurrentItem="True" HorizontalAlignment="Left" Margin="10,35,0,0" VerticalAlignment="Top" Height="215" Width="576"/>
     </Grid>
 </Window>

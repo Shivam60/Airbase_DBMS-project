@@ -104,5 +104,10 @@ namespace airbase
                 conn.Close();
             }
         }
+
+        private void WindowsFormsHost_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
+        {
+
+        }
     }
 }
