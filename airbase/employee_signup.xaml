@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="employee_signup" Height="500" Width="500">
     <Grid RenderTransformOrigin="0.528,0.394">
+        <WindowsFormsHost HorizontalAlignment="Left" Height="469" VerticalAlignment="Top" Width="492"/>
         <Label x:Name="label" Content="Enter employee detalis below" HorizontalAlignment="Left" Margin="75,10,0,0" VerticalAlignment="Top" Width="265" FontWeight="Bold" FontSize="18"/>
         <Label x:Name="label1" Content="Employee-id" HorizontalAlignment="Left" Margin="21,50,0,0" VerticalAlignment="Top" Width="94" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="120,50,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
@@ -27,7 +28,7 @@
         <Label x:Name="label9" Content="Cell-no" HorizontalAlignment="Left" Margin="37,283,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" FontSize="14"/>
         <TextBox x:Name="textBox8" HorizontalAlignment="Left" Height="23" Margin="120,285,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <Button x:Name="button" Content="Submit" HorizontalAlignment="Left" Margin="120,315,0,0" VerticalAlignment="Top" Width="75" Height="25" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="30,371,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click"/>
+        <Button x:Name="button1" Content="Back" HorizontalAlignment="Left" Margin="30,371,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click" FontWeight="Bold" FontSize="16"/>
 
     </Grid>
 </Window>

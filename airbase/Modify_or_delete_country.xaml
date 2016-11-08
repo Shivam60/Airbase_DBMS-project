@@ -8,6 +8,7 @@
         Title="Modify_or_delete_country" Height="300" Width="300"
         Loaded="Window_Loaded">
     <Grid>
+        <WindowsFormsHost HorizontalAlignment="Left" Width="292" Margin="0,0,0,-3"/>
         <Label x:Name="label" Content="Modify or delete country" HorizontalAlignment="Left" Margin="22,10,0,0" VerticalAlignment="Top" Width="226" FontSize="18" RenderTransformOrigin="0.326,0.26" FontWeight="Bold"/>
         <ComboBox x:Name="comboBox" Text="Select Country ID" HorizontalAlignment="Left" Margin="85,70,0,0" VerticalAlignment="Top" Width="126" IsEditable="True" SelectionChanged="comboBox_SelectionChanged" FontWeight="Bold"/>
         <Label x:Name="label2" Content="Country Name" HorizontalAlignment="Left" Margin="22,145,0,0" VerticalAlignment="Top" Width="113" FontWeight="Bold" FontSize="14"/>

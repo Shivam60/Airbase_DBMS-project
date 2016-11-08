@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Cancel_ticket1" Height="300" Width="300">
     <Grid>
-        
+        <WindowsFormsHost HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="292"/>
+
     </Grid>
 </Window>

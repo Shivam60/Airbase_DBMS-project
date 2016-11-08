@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Login" Height="300" Width="300">
     <Grid>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="292" Margin="0,1,0,0"/>
         <Label x:Name="label" Content="Login Form" HorizontalAlignment="Left" Height="33" Margin="99,17,0,0" VerticalAlignment="Top" Width="115" FontWeight="Bold" FontSize="18"/>
         <Label x:Name="label1" Content="Username" HorizontalAlignment="Left" Margin="19,64,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
         <Label x:Name="label2" Content="Password" HorizontalAlignment="Left" Margin="19,95,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>

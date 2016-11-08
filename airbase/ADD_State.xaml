@@ -8,6 +8,7 @@
         Title="ADD_State" Height="300" Width="300"
         Loaded="Window_Loaded">
     <Grid>
+        <WindowsFormsHost HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="292"/>
         <Label x:Name="label" Content="Add State" HorizontalAlignment="Left" Margin="95,20,0,0" VerticalAlignment="Top" Width="95" FontSize="18" FontWeight="Bold"/>
         <Label x:Name="label1" Content="State ID" HorizontalAlignment="Left" Margin="30,90,0,0" VerticalAlignment="Top" Height="30" Width="105" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="label2" Content="State Name" HorizontalAlignment="Left" Margin="30,120,0,0" VerticalAlignment="Top" Width="95" FontWeight="Bold" FontSize="14"/>

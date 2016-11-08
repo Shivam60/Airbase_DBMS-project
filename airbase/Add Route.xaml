@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         Title="Add_Route" Height="304" Width="418">
     <Grid Margin="-1,2,1,-2">
+        <WindowsFormsHost HorizontalAlignment="Left" Height="269" VerticalAlignment="Top" Width="410"/>
         <Label x:Name="label" Content="Add Route" HorizontalAlignment="Left" Margin="105,10,0,0" VerticalAlignment="Top" Width="103" FontSize="18" FontWeight="Bold"/>
         <Label x:Name="label1" Content="Route ID" HorizontalAlignment="Left" Margin="20,55,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold" FontSize="14"/>
         <Label x:Name="label2" Content="Airport Name" HorizontalAlignment="Left" Margin="10,86,0,0" VerticalAlignment="Top" Width="100" FontWeight="Bold" FontSize="14"/>
