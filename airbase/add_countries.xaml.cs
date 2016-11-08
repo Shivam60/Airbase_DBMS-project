@@ -25,7 +25,7 @@ namespace airbase
         {
             InitializeComponent();
         }
-        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=dharmendra;Database=chawlaairbase");
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Menu men = new Menu();

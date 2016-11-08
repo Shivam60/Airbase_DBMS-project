@@ -64,6 +64,9 @@
     <Compile Include="country_view.xaml.cs">
       <DependentUpon>country_view.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Menu.xaml.cs">
+      <DependentUpon>Menu.xaml</DependentUpon>
+    </Compile>
     <Compile Include="State_view.xaml.cs">
       <DependentUpon>State_view.xaml</DependentUpon>
     </Compile>
@@ -160,8 +163,8 @@
       <DependentUpon>Login.xaml</DependentUpon>
     </Compile>
     <Page Include="Menu.xaml">
-      <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
     </Page>
     <Page Include="Modify_or_delete_country.xaml">
       <SubType>Designer</SubType>
@@ -181,9 +184,6 @@
     </Page>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Menu.xaml.cs">
-      <DependentUpon>Menu.xaml</DependentUpon>
-    </Compile>
     <Compile Include="Modify_or_delete_country.xaml.cs">
       <DependentUpon>Modify_or_delete_country.xaml</DependentUpon>
     </Compile>

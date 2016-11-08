@@ -28,7 +28,9 @@ namespace airbase
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            Menu men = new Menu();
+            men.Show();
+            this.Close();
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

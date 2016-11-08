@@ -5,10 +5,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="Flight_Schedule_view" Height="327" Width="344"
+        Title="Flight_Schedule_view" Height="527" Width="544"
         Loaded="Window_Loaded">
-    <Grid>
-        <WindowsFormsHost HorizontalAlignment="Left" Height="296" VerticalAlignment="Top" Width="336"/>
+    <Grid Margin="0,0,-8,2">
+       
         <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,50,0,0" VerticalAlignment="Top" Height="200" Width="316"/>
         <Label x:Name="label" Content="View All Flight Schedule" HorizontalAlignment="Left" Margin="60,10,0,0" VerticalAlignment="Top" Width="219" FontWeight="Bold" FontSize="18"/>
         <Button x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="10,266,0,0" VerticalAlignment="Top" Width="75" Click="button_Click" FontWeight="Bold" FontSize="16"/>

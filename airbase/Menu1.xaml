@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Menu" Height="522" Width="666">
     <Grid>
-       <Label x:Name="label" Content="Welcome To main Menu" HorizontalAlignment="Left" Margin="157,10,0,0" VerticalAlignment="Top" Height="48" Width="224" FontWeight="Bold" FontSize="18"/>
+       
+        <Label x:Name="label" Content="Welcome To main Menu" HorizontalAlignment="Left" Margin="157,10,0,0" VerticalAlignment="Top" Height="48" Width="224" FontWeight="Bold" FontSize="18"/>
         <Button x:Name="button" Content="Show Aircraft" HorizontalAlignment="Left" Margin="60,90,0,0" VerticalAlignment="Top" Width="90" Height="25" Click="button_Click" FontWeight="Bold"/>
         <Button x:Name="button1" Content="Add Aircraft" HorizontalAlignment="Left" Margin="60,130,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.8,0" Height="25" Click="button1_Click" FontWeight="Bold"/>
         <Button x:Name="button2" Content="View Schedule" HorizontalAlignment="Left" Margin="60,170,0,0" VerticalAlignment="Top" Width="90" Height="25" Click="button2_Click" FontWeight="Bold"/>
