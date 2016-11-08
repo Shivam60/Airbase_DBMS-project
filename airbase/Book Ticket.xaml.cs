@@ -23,5 +23,10 @@ namespace airbase
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
