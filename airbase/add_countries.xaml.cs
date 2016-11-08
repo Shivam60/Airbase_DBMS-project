@@ -40,7 +40,7 @@ namespace airbase
                 conn.Open();
                 int id = Convert.ToInt32(textBox.Text);
                 string cnt= textBox1.Text;
-                string scmd = "insert into countrues values( "+id+",'"+cnt+"');";
+                string scmd = "insert into countries values( "+id+",'"+cnt+"');";
                 //MessageBox.Show(scmd);
                 MySqlCommand cmd = new MySqlCommand(scmd, conn);
                 MySqlDataReader dr = cmd.ExecuteReader();

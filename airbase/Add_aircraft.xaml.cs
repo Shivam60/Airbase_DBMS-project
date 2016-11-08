@@ -43,7 +43,7 @@ namespace airbase
                 int cpa= Convert.ToInt32(textBox2.Text);
                 string mfon = textBox3.Text;
                 string mfd = textBox4.Text;
-                string scmd = "insert into aircrafts values( " + id + "," + acno + "," + cpa + ",'" + mfon + "','" +mfd+ "'"+");";
+                string scmd = "insert into aircrafts values( " + id + "," + acno + "," + cpa + ",'" + mfd + "','" +mfon+ "'"+");";
                  MessageBox.Show(scmd);
                 MySqlCommand cmd = new MySqlCommand(scmd, conn);
                 MySqlDataReader dr = cmd.ExecuteReader();

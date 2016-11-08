@@ -32,7 +32,7 @@ namespace airbase
             try
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("Select * from aircraft", conn);
+                MySqlCommand cmd = new MySqlCommand("Select * from aircrafts;", conn);
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adp.Fill(ds, "LoadDataBinding");
@@ -52,6 +52,10 @@ namespace airbase
         private void button_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
         }
     }
 }
