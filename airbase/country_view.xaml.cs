@@ -56,5 +56,10 @@ namespace airbase
             men.Show();
             this.Close();
         }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

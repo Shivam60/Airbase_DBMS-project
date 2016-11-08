@@ -11,7 +11,9 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-
+using System.Data;
+using MySql.Data.MySqlClient;
+using System.Configuration;
 namespace airbase
 {
     /// <summary>
@@ -23,7 +25,7 @@ namespace airbase
         {
             InitializeComponent();
         }
-
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Menu men = new Menu();
