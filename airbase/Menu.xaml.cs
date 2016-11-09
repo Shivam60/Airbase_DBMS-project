@@ -99,5 +99,17 @@ namespace airbase
             men.Show();
             this.Close();
         }
+
+        private void button6_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button14_Click(object sender, RoutedEventArgs e)
+        {
+            State_view men = new State_view();
+            men.Show();
+            this.Close();
+        }
     }
 }

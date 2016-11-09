@@ -8,6 +8,6 @@
         Title="State_view" Height="332" Width="604"
         Loaded="Window_Loaded">
     <Grid>
-        <WindowsFormsHost HorizontalAlignment="Left" Height="301" VerticalAlignment="Top" Width="596"/>
+        
     </Grid>
 </Window>
