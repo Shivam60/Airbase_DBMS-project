@@ -5,17 +5,69 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="Login" Height="300" Width="300">
+        Title="Login" Width="425" Height="400" Background="#185d7c">
     <Grid>
-        <WindowsFormsHost HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="292" Margin="0,1,0,0"/>
-        <Label x:Name="label" Content="Login Form" HorizontalAlignment="Left" Height="33" Margin="99,17,0,0" VerticalAlignment="Top" Width="115" FontWeight="Bold" FontSize="18"/>
-        <Label x:Name="label1" Content="Username" HorizontalAlignment="Left" Margin="19,64,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
-        <Label x:Name="label2" Content="Password" HorizontalAlignment="Left" Margin="19,95,0,0" VerticalAlignment="Top" Width="75" FontWeight="Bold"/>
-        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="94,64,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="94,95,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
-        <Button x:Name="button" Content="GO" HorizontalAlignment="Left" Margin="94,126,0,0" VerticalAlignment="Top" Width="54" Click="button_Click" FontWeight="Bold" FontSize="16"/>
-        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="216,228,0,0" VerticalAlignment="Top" Width="66" Click="button1_Click" FontSize="18" FontWeight="Bold"/>
-        <Button x:Name="button2" Content="New user's signup here" HorizontalAlignment="Left" Margin="10,228,0,0" VerticalAlignment="Top" Width="163" FontWeight="Bold" Height="28" FontSize="14"/>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+
+        <Border x:Name="ImageUserContainer" Grid.Row="0" Width="150" Height="150" Margin="5,20,5,5">
+            <Border.BitmapEffect>
+                <DropShadowBitmapEffect Opacity="0.5"/>
+            </Border.BitmapEffect>
+            <Grid>
+                <Canvas x:Name="Layer_2" Width="150" Height="150" Canvas.Left="0" Canvas.Top="0">
+                    <Path x:Name="Path" Width="150" Height="150" Canvas.Left="0" Canvas.Top="0" Stretch="Fill" StrokeThickness="1.33319" StrokeLineJoin="Round" Stroke="#FF000000" Data="F1 M 189.42,22.7504C 195.199,20.306 250.876,17.7504 275.532,17.7504C 300.188,17.7504 359.999,20.8198 364.422,23.7504C 368.845,26.6811 369.067,27.7923 370.088,30.4164C 372.233,32.2089 376.088,80.2348 376.088,114.973C 376.088,149.711 377.067,174.57 370.088,203.418C 368.706,206.875 366.817,208.181 363.422,210.084C 334.65,216.848 310.203,218.084 274.199,218.084C 238.195,218.084 198.539,212.459 189.42,210.084C 185.733,208.959 184.067,207.514 181.754,204.418C 176.511,175.514 175.754,157.647 175.754,114.306C 175.754,70.9657 179.421,33.3045 182.754,29.4164C 185.372,25.2991 185.206,25.5908 189.42,22.7504 Z ">
+                        <Path.Fill>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#FF427183" Offset="0"/>
+                                    <GradientStop Color="#FF4C8AA8" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </Path.Fill>
+                    </Path>
+                </Canvas>
+                <Canvas x:Name="Layer_3" Width="150" Height="150" Canvas.Left="0" Canvas.Top="0">
+                    <Path x:Name="Path_0" Width="148" Height="148" Canvas.Left="1" Canvas.Top="1" Stretch="Fill" StrokeThickness="1.33319" StrokeLineJoin="Round" Stroke="#FFFFFFFF" Data="F1 M 190.257,23.4393C 195.986,21.0155 251.182,18.4815 275.625,18.4815C 300.068,18.4815 359.362,21.525 363.746,24.4309C 368.131,27.3368 368.351,28.4387 369.363,31.0407C 371.49,32.8181 375.311,80.4393 375.311,114.884C 375.311,149.329 376.282,173.979 369.363,202.584C 367.993,206.013 366.12,207.307 362.755,209.194C 334.232,215.901 309.996,217.127 274.303,217.127C 238.61,217.127 199.297,211.549 190.257,209.194C 186.602,208.079 184.95,206.646 182.658,203.576C 177.46,174.916 176.71,157.199 176.71,114.224C 176.71,71.2483 180.345,33.9044 183.649,30.0491C 186.244,25.9666 186.079,26.2558 190.257,23.4393 Z "/>
+                </Canvas>
+                <Canvas x:Name="Layer_5" Width="150" Height="150" Canvas.Left="0" Canvas.Top="0">
+                    <Path x:Name="Path_1" Width="130" Height="130" Canvas.Left="10" Canvas.Top="10" Stretch="Fill" StrokeThickness="1.33319" StrokeLineJoin="Round" Stroke="#FFFFFFFF" Fill="#FF185D7C" Data="F1 M 196.596,30.1355L 355.245,30.1355C 358.927,30.1355 361.911,33.12 361.911,36.8015L 361.911,195.451C 361.911,199.132 358.927,202.117 355.245,202.117L 196.596,202.117C 192.914,202.117 189.93,199.132 189.93,195.451L 189.93,36.8015C 189.93,33.12 192.914,30.1355 196.596,30.1355 Z "/>
+                </Canvas>
+                <Canvas x:Name="Layer_6" Width="150" Height="150" Canvas.Left="0" Canvas.Top="0">
+                    <Path x:Name="Path_2" Width="128" Height="128" Canvas.Left="11" Canvas.Top="11" Stretch="Fill" StrokeThickness="1.33319" StrokeLineJoin="Round" Stroke="#FF000000" Data="F1 M 197.8,31.4281L 353.783,31.4281C 357.464,31.4281 360.449,34.4126 360.449,38.0941L 360.449,194.077C 360.449,197.759 357.464,200.743 353.783,200.743L 197.8,200.743C 194.118,200.743 191.134,197.759 191.134,194.077L 191.134,38.0941C 191.134,34.4126 194.118,31.4281 197.8,31.4281 Z ">
+                        <Path.Fill>
+                            <LinearGradientBrush StartPoint="0.0578296,0.0262506" EndPoint="0.995431,0.963852">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#7FFFFFFF" Offset="0"/>
+                                    <GradientStop Color="#26FFFFFF" Offset="0.488584"/>
+                                    <GradientStop Color="#00FFFFFF" Offset="0.525114"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </Path.Fill>
+                    </Path>
+                </Canvas>
+                <Canvas x:Name="Layer_4" Width="150" Height="150" Canvas.Left="0" Canvas.Top="0">
+                    <Path x:Name="Path_3" Width="144" Height="77" Canvas.Left="3" Canvas.Top="3" Stretch="Fill" Data="F1 M 191.246,23.7614C 196.974,21.3376 252.17,18.8035 276.613,18.8035C 301.056,18.8035 360.35,21.847 364.734,24.753C 369.119,27.6589 369.339,28.7607 370.351,31.3627C 372.478,33.1402 374.299,72.7613 374.299,107.206C 374.299,112.46 316.899,122.449 275.291,122.449C 233.683,122.449 177.698,111.925 177.698,107.546C 177.698,64.5703 181.333,34.2265 184.637,30.3712C 187.233,26.2886 187.067,26.5778 191.246,23.7614 Z ">
+                        <Path.Fill>
+                            <LinearGradientBrush StartPoint="0.51537,-0.00653635" EndPoint="0.51537,0.992601">
+                                <LinearGradientBrush.GradientStops>
+                                    <GradientStop Color="#7FFFFFFF" Offset="0"/>
+                                    <GradientStop Color="#26FFFFFF" Offset="1"/>
+                                </LinearGradientBrush.GradientStops>
+                            </LinearGradientBrush>
+                        </Path.Fill>
+                    </Path>
+                </Canvas>
+            </Grid>
+        </Border>
+
+        <TextBox Grid.Row="3" Text="Donald Duck" Margin="195,11,10,-29"/>
+        <PasswordBox Grid.Row="3" Margin="195,35,10,-64"/>
 
     </Grid>
 </Window>
