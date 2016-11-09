@@ -65,5 +65,20 @@ namespace airbase
         {
             this.Close();
         }
+
+        private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void button_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

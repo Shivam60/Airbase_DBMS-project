@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="Login" Width="425" Height="400" Background="#185d7c">
+        Title="Login" Width="325" Height="300" Background="#185d7c">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"/>
@@ -52,7 +52,7 @@
                     </Path>
                 </Canvas>
                 <Canvas x:Name="Layer_4" Width="150" Height="150" Canvas.Left="0" Canvas.Top="0">
-                    <Path x:Name="Path_3" Width="144" Height="77" Canvas.Left="3" Canvas.Top="3" Stretch="Fill" Data="F1 M 191.246,23.7614C 196.974,21.3376 252.17,18.8035 276.613,18.8035C 301.056,18.8035 360.35,21.847 364.734,24.753C 369.119,27.6589 369.339,28.7607 370.351,31.3627C 372.478,33.1402 374.299,72.7613 374.299,107.206C 374.299,112.46 316.899,122.449 275.291,122.449C 233.683,122.449 177.698,111.925 177.698,107.546C 177.698,64.5703 181.333,34.2265 184.637,30.3712C 187.233,26.2886 187.067,26.5778 191.246,23.7614 Z ">
+                    <Path x:Name="Path_3" Width="144" Height="77" Canvas.Left="6" Canvas.Top="-12.038" Stretch="Fill" Data="F1 M 191.246,23.7614C 196.974,21.3376 252.17,18.8035 276.613,18.8035C 301.056,18.8035 360.35,21.847 364.734,24.753C 369.119,27.6589 369.339,28.7607 370.351,31.3627C 372.478,33.1402 374.299,72.7613 374.299,107.206C 374.299,112.46 316.899,122.449 275.291,122.449C 233.683,122.449 177.698,111.925 177.698,107.546C 177.698,64.5703 181.333,34.2265 184.637,30.3712C 187.233,26.2886 187.067,26.5778 191.246,23.7614 Z ">
                         <Path.Fill>
                             <LinearGradientBrush StartPoint="0.51537,-0.00653635" EndPoint="0.51537,0.992601">
                                 <LinearGradientBrush.GradientStops>
@@ -65,9 +65,12 @@
                 </Canvas>
             </Grid>
         </Border>
-
-        <TextBox Grid.Row="3" Text="Donald Duck" Margin="195,11,10,-29"/>
-        <PasswordBox Grid.Row="3" Margin="195,35,10,-64"/>
+        <Label x:Name="label" Content="Username" HorizontalAlignment="Left" Margin="10,0,0,-15" VerticalAlignment="Top" Grid.Row="2" Width="83" Height="24" FontWeight="Bold" Grid.RowSpan="2"/>
+        <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="10,23,0,-10" Grid.Row="3" VerticalAlignment="Top" Width="83" FontWeight="Bold"/>
+        <Button x:Name="button" Content="Go" HorizontalAlignment="Left" Margin="93,67,0,-6" Grid.Row="3" Width="39" FontWeight="Bold" Click="button_Click_1" Height="21" VerticalAlignment="Top"/>
+        <Button x:Name="button1" Content="New User" HorizontalAlignment="Left" Margin="183,67,0,-11" Grid.Row="3" VerticalAlignment="Top" Width="95" FontWeight="Bold" Click="button1_Click_1"/>
+        <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="84,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="84,23,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
 
     </Grid>
 </Window>
