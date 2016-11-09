@@ -26,7 +26,7 @@ namespace airbase
         {
             InitializeComponent();
         }
-        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=dharmendra;Database=chawlaairbase");
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
             try
@@ -57,6 +57,11 @@ namespace airbase
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void button1_Click_1(object sender, RoutedEventArgs e)
         {
             this.Close();
         }

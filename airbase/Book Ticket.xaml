@@ -47,6 +47,6 @@
         <Label x:Name="label32" Content="Label" HorizontalAlignment="Left" Margin="170,613,0,0" VerticalAlignment="Top"/>
         <Label x:Name="label33" Content="Label" HorizontalAlignment="Left" Margin="170,644,0,0" VerticalAlignment="Top"/>
         <Button x:Name="button1" Content="Book Ticket" HorizontalAlignment="Left" Margin="275,531,0,0" VerticalAlignment="Top" Width="96" FontSize="16" FontWeight="Bold"/>
-        <Button x:Name="button2" Content="Back" HorizontalAlignment="Left" Margin="275,567,0,0" VerticalAlignment="Top" Width="75" FontSize="16" FontWeight="Bold" Click="button2_Click"/>
+        <Button x:Name="button2" Content="Back" HorizontalAlignment="Left" Margin="275,567,0,0" VerticalAlignment="Top" Width="96" FontSize="16" FontWeight="Bold" Click="button2_Click" Height="23"/>
     </Grid>
 </Window>

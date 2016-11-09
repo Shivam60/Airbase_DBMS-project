@@ -35,7 +35,9 @@ namespace airbase
 
         private void button7_Click(object sender, RoutedEventArgs e)
         {
-
+            employee_signup men = new employee_signup();
+            men.Show();
+            this.Close();
         }
 
         private void button4_Click(object sender, RoutedEventArgs e)
@@ -102,7 +104,9 @@ namespace airbase
 
         private void button6_Click(object sender, RoutedEventArgs e)
         {
-
+            view_employee men = new view_employee();
+            men.Show();
+            this.Close();
         }
 
         private void button14_Click(object sender, RoutedEventArgs e)

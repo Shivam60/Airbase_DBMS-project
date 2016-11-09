@@ -16,11 +16,11 @@ using MySql.Data.MySqlClient;
 namespace airbase
 {
     /// <summary>
-    /// Interaction logic for State_view.xaml
+    /// Interaction logic for view_employee.xaml
     /// </summary>
-    public partial class State_view : Window
+    public partial class view_employee : Window
     {
-        public State_view()
+        public view_employee()
         {
             InitializeComponent();
         }
@@ -30,7 +30,7 @@ namespace airbase
             try
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("Select * from state", conn);
+                MySqlCommand cmd = new MySqlCommand("Select * from employee", conn);
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adp.Fill(ds, "LoadDataBinding");
@@ -45,11 +45,6 @@ namespace airbase
             {
                 conn.Close();
             }
-        }
-
-        private void WindowsFormsHost_ChildChanged(object sender, System.Windows.Forms.Integration.ChildChangedEventArgs e)
-        {
-
         }
 
         private void button_Click(object sender, RoutedEventArgs e)

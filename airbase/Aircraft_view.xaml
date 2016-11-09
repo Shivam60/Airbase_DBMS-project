@@ -10,9 +10,9 @@
     <Grid>
         <WindowsFormsHost HorizontalAlignment="Left" Height="271" VerticalAlignment="Top" Width="446"/>
         <Label x:Name="label" Content="Aircraft View" HorizontalAlignment="Left" Margin="175,5,0,0" VerticalAlignment="Top" Width="120" FontSize="18" FontWeight="Bold"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="179" Width="426"/>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding LoadDataBinding}" IsSynchronizedWithCurrentItem="True" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="179" Width="426"/>
         <Button x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="10,230,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
-        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="361,230,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="361,230,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click_1"/>
 
     </Grid>
 </Window>

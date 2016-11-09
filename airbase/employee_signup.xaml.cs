@@ -25,12 +25,54 @@ namespace airbase
         {
             InitializeComponent();
         }
-        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=dharmendra;Database=chawlaairbase");
         private void button1_Click(object sender, RoutedEventArgs e)
         {
             Menu men = new Menu();
             men.Show();
             this.Close();
+        }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                conn.Open();
+                int EmpID = Convert.ToInt32(textBox.Text);
+                string Name = textBox1.Text;
+                string Address = textBox2.Text;
+                int Branch = Convert.ToInt32(textBox3.Text);
+                string Designation = textBox4.Text;
+           
+                string Email = textBox5.Text;
+                string Tel = textBox6.Text;
+                int Ext = Convert.ToInt32(textBox7.Text);
+                string scmd = "insert into employee values( " + EmpID + ",'" + Name + "','" + Address+ "'," + Branch + " ,'" + Designation + "'," + Email + ",'" + Tel + "'," + Ext + ");";
+                MessageBox.Show(scmd);
+                MySqlCommand cmd = new MySqlCommand(scmd, conn);
+                
+                MySqlDataReader dr = cmd.ExecuteReader();
+
+                MessageBox.Show("Successfull feed");
+            }
+            catch (MySqlException ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
+            finally
+            {
+                conn.Close();
+            }
+        }
+
+        private void textBox_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
+
+        private void textBox7_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

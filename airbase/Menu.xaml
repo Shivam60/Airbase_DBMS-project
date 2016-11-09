@@ -6,23 +6,21 @@
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
         Title="Menu" Height="522" Width="666">
-    <Grid Margin="0,0,2,0">
+    <Grid Margin="0,0,2,-3">
         <Label x:Name="label" Content="Welcome To main Menu" HorizontalAlignment="Left" Margin="157,10,0,0" VerticalAlignment="Top" Height="48" Width="224" FontWeight="Bold" FontSize="18"/>
         <Button x:Name="button" Content="Show Aircraft" HorizontalAlignment="Left" Margin="60,90,0,0" VerticalAlignment="Top" Width="90" Height="25" Click="button_Click" FontWeight="Bold"/>
         <Button x:Name="button1" Content="Add Aircraft" HorizontalAlignment="Left" Margin="60,130,0,0" VerticalAlignment="Top" Width="90" RenderTransformOrigin="0.8,0" Height="25" Click="button1_Click" FontWeight="Bold"/>
         <Button x:Name="button2" Content="View Schedule" HorizontalAlignment="Left" Margin="60,170,0,0" VerticalAlignment="Top" Width="90" Height="25" Click="button2_Click" FontWeight="Bold"/>
-        <Button x:Name="button3" Content="Book Ticket" HorizontalAlignment="Left" Margin="195,92,0,0" VerticalAlignment="Top" Width="85" Height="23" Click="button3_Click" FontWeight="Bold"/>
+        <Button x:Name="button3" Content="Book Ticket" HorizontalAlignment="Left" Margin="195,92,0,0" VerticalAlignment="Top" Width="110" Height="23" Click="button3_Click" FontWeight="Bold"/>
         <Button x:Name="button4" Content="Exit" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="195,266,0,0" Click="button4_Click" FontWeight="Bold" FontFamily="Segoe UI Black" FontSize="18"/>
-        <Button x:Name="button5" Content="Cancel Ticket" HorizontalAlignment="Left" Margin="195,132,0,0" VerticalAlignment="Top" Width="85" Height="23" Click="button5_Click" FontWeight="Bold"/>
         <Button x:Name="button6" Content="View Employees" HorizontalAlignment="Left" Margin="330,90,0,0" VerticalAlignment="Top" Width="110" Height="23" FontWeight="Bold" Click="button6_Click"/>
-        <Button x:Name="button7" Content="Add Employee" HorizontalAlignment="Left" Margin="330,130,0,0" VerticalAlignment="Top" Width="110" Click="button7_Click" FontWeight="Bold"/>
-        <Button x:Name="button8" Content="Remove Employee" HorizontalAlignment="Left" Margin="330,175,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold"/>
+        <Button x:Name="button7" Content="Add Employee" HorizontalAlignment="Left" Margin="195,135,0,0" VerticalAlignment="Top" Width="110" Click="button7_Click" FontWeight="Bold"/>
         <Button x:Name="button9" Content="Add Country" HorizontalAlignment="Left" Margin="480,90,0,0" VerticalAlignment="Top" Width="143" Click="button9_Click" FontWeight="Bold"/>
         <Button x:Name="button10" Content="Modify/Delete Country" HorizontalAlignment="Left" Margin="480,130,0,0" VerticalAlignment="Top" Width="143" RenderTransformOrigin="-0.133,1.5" Click="button10_Click" FontWeight="Bold"/>
-        <Button x:Name="button11" Content="Add State" HorizontalAlignment="Left" Margin="480,175,0,0" VerticalAlignment="Top" Width="143" Click="button11_Click" FontWeight="Bold"/>
-        <Button x:Name="button12" Content="Modify/Delete State" HorizontalAlignment="Left" Margin="480,210,0,0" VerticalAlignment="Top" Width="143" Click="button12_Click" FontWeight="Bold"/>
-        <Button x:Name="button13" Content="View all countries" HorizontalAlignment="Left" Margin="330,215,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold" Click="button13_Click"/>
-        <Button x:Name="button14" Content="View all states" HorizontalAlignment="Left" Margin="480,251,0,0" VerticalAlignment="Top" Width="143" FontWeight="Bold" FontSize="14" Click="button14_Click"/>
+        <Button x:Name="button11" Content="Add State" HorizontalAlignment="Left" Margin="195,180,0,0" VerticalAlignment="Top" Width="110" Click="button11_Click" FontWeight="Bold"/>
+        <Button x:Name="button12" Content="Modify/Delete State" HorizontalAlignment="Left" Margin="330,180,0,0" VerticalAlignment="Top" Width="143" Click="button12_Click" FontWeight="Bold"/>
+        <Button x:Name="button13" Content="View all countries" HorizontalAlignment="Left" Margin="330,140,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold" Click="button13_Click"/>
+        <Button x:Name="button14" Content="View all states" HorizontalAlignment="Left" Margin="480,177,0,0" VerticalAlignment="Top" Width="143" FontWeight="Bold" FontSize="14" Click="button14_Click"/>
 
     </Grid>
 </Window>

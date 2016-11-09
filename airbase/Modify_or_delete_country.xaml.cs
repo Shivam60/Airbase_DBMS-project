@@ -117,7 +117,7 @@ namespace airbase
 
         }
 
-        private void button1_Click(object sender, RoutedEventArgs e)
+        private void button1_Click(object sender, RoutedEventArgs e)   
         {
            if(radioButton.IsChecked==true)
             {
