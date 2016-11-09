@@ -67,7 +67,7 @@
         </Border>
         <Label x:Name="label" Content="Username" HorizontalAlignment="Left" Margin="10,0,0,-15" VerticalAlignment="Top" Grid.Row="2" Width="83" Height="24" FontWeight="Bold" Grid.RowSpan="2"/>
         <Label x:Name="label1" Content="Password" HorizontalAlignment="Left" Margin="10,23,0,-10" Grid.Row="3" VerticalAlignment="Top" Width="83" FontWeight="Bold"/>
-        <Button x:Name="button" Content="Go" HorizontalAlignment="Left" Margin="93,67,0,-6" Grid.Row="3" Width="39" FontWeight="Bold" Click="button_Click_1" Height="21" VerticalAlignment="Top"/>
+        <Button x:Name="button" Content="Go" HorizontalAlignment="Left" Margin="93,67,0,-5" Grid.Row="3" Width="39" FontWeight="Bold" Click="button_Click_1" Height="21" VerticalAlignment="Top"/>
         <Button x:Name="button1" Content="New User" HorizontalAlignment="Left" Margin="183,67,0,-11" Grid.Row="3" VerticalAlignment="Top" Width="95" FontWeight="Bold" Click="button1_Click_1"/>
         <TextBox x:Name="textBox" HorizontalAlignment="Left" Height="23" Margin="84,0,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
         <TextBox x:Name="textBox1" HorizontalAlignment="Left" Height="23" Margin="84,23,0,0" Grid.Row="3" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
