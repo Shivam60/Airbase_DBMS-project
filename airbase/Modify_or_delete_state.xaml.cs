@@ -143,7 +143,38 @@ namespace airbase
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-
+            if (radioButton.IsChecked == true)
+            {
+                try
+                {
+                    conn.Open();
+                    int ctid = Convert.ToInt32(comboBox.SelectedItem);
+                    string cntnm = textBox1.Text;
+                    MySqlCommand cmd = new MySqlCommand("delete from state where StID=" + ctid + ";", conn);
+                    MySqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        var valen = dr["CtID"];
+                        if (!comboBox.Items.Contains(valen))
+                        {
+                            comboBox.Items.Add(valen);
+                        }
+                    }
+                    MessageBox.Show("Successfully updated");
+                }
+                catch (MySqlException ex)
+                {
+                    MessageBox.Show(ex.ToString());
+                }
+                finally
+                {
+                    conn.Close();
+                }
+            }
+            else
+            {
+                MessageBox.Show("Select Delete Button First");
+            }
         }
 
         private void textBox1_TextChanged(object sender, TextChangedEventArgs e)

@@ -21,7 +21,7 @@
         <Button x:Name="button10" Content="Modify/Delete Country" HorizontalAlignment="Left" Margin="480,130,0,0" VerticalAlignment="Top" Width="143" RenderTransformOrigin="-0.133,1.5" Click="button10_Click" FontWeight="Bold"/>
         <Button x:Name="button11" Content="Add State" HorizontalAlignment="Left" Margin="480,175,0,0" VerticalAlignment="Top" Width="143" Click="button11_Click" FontWeight="Bold"/>
         <Button x:Name="button12" Content="Modify/Delete State" HorizontalAlignment="Left" Margin="480,210,0,0" VerticalAlignment="Top" Width="143" Click="button12_Click" FontWeight="Bold"/>
-        <Button x:Name="button13" Content="View all countries" HorizontalAlignment="Left" Margin="330,215,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold"/>
+        <Button x:Name="button13" Content="View all countries" HorizontalAlignment="Left" Margin="330,215,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold" Click="button13_Click"/>
         <Button x:Name="button14" Content="View all states" HorizontalAlignment="Left" Margin="480,251,0,0" VerticalAlignment="Top" Width="143" FontWeight="Bold" FontSize="14" Click="button14_Click"/>
 
     </Grid>

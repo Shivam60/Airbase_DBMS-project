@@ -111,5 +111,12 @@ namespace airbase
             men.Show();
             this.Close();
         }
+
+        private void button13_Click(object sender, RoutedEventArgs e)
+        {
+            country_view men = new country_view();
+            men.Show();
+            this.Close();
+        }
     }
 }

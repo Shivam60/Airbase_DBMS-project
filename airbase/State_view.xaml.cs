@@ -51,5 +51,17 @@ namespace airbase
         {
 
         }
+
+        private void button_Click(object sender, RoutedEventArgs e)
+        {
+            Cancel_ticket1 men = new Cancel_ticket1();
+            men.Show();
+            this.Close();
+        }
+
+        private void button1_Click(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
     }
 }

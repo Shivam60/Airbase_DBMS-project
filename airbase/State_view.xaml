@@ -5,9 +5,12 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:airbase"
         mc:Ignorable="d"
-        Title="State_view" Height="332" Width="604"
+        Title="State_view" Height="534.475" Width="804"
         Loaded="Window_Loaded">
-    <Grid>
-        
+    <Grid Margin="0,0,2,0">
+        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" ItemsSource="{Binding LoadDataBinding}" IsSynchronizedWithCurrentItem="True" VerticalAlignment="Top" Height="501" Width="794"/>
+        <Button x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="33,434,0,0" VerticalAlignment="Top" Width="100" Height="37" FontWeight="Bold" FontSize="22" Click="button_Click"/>
+        <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="583,434,0,0" VerticalAlignment="Top" Width="92" Height="37" FontWeight="Bold" FontSize="22" Click="button1_Click"/>
+
     </Grid>
 </Window>

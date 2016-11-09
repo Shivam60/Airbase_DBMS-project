@@ -9,7 +9,7 @@
         Loaded="Window_Loaded">
     <Grid>
         <Label x:Name="label" Content="Country View" HorizontalAlignment="Left" Margin="150,5,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.526,-0.385" Width="155"/>
-        <DataGrid x:Name="dataGrid" HorizontalAlignment="Left" Margin="10,36,0,0" VerticalAlignment="Top" Height="204" Width="391"/>
+        <DataGrid x:Name="dataGrid" ItemsSource="{Binding LoadDataBinding}" IsSynchronizedWithCurrentItem="True"  Margin="10,36,0,0" VerticalAlignment="Top" Height="204" Width="391"/>
         <Button x:Name="button" Content="Back" HorizontalAlignment="Left" Margin="10,256,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="button_Click"/>
         <Button x:Name="button1" Content="Exit" HorizontalAlignment="Left" Margin="326,256,0,0" VerticalAlignment="Top" Width="75" Height="35" Click="button1_Click"/>
 

@@ -25,7 +25,7 @@ namespace airbase
         {
             InitializeComponent();
         }
-        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
+        MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=dharmendra;Database=chawlaairbase");
         private void button2_Click(object sender, RoutedEventArgs e)
         {
             Menu men = new Menu();
@@ -82,14 +82,14 @@ namespace airbase
 
         private void button_Click(object sender, RoutedEventArgs e)
         {
-            if(radioButton.IsChecked==true)
+            if(radioButton1.IsChecked==true)
             {
                 try
                 {
                     conn.Open();
                     int ctid = Convert.ToInt32(comboBox.SelectedItem);
                     string cntnm = textBox1.Text;
-                    MySqlCommand cmd = new MySqlCommand("update state set CountryName= '"+cntnm+"' where CtID="+ctid, conn);
+                    MySqlCommand cmd = new MySqlCommand("update countries set CountryName= '"+cntnm+"' where CtID="+ctid+";", conn);
                     MySqlDataReader dr = cmd.ExecuteReader();
                     while (dr.Read())
                     {
@@ -99,6 +99,7 @@ namespace airbase
                             comboBox.Items.Add(valen);
                         }
                     }
+                    MessageBox.Show("Successfully updated");
                 }
                 catch (MySqlException ex)
                 {
@@ -113,18 +114,29 @@ namespace airbase
             {
                 MessageBox.Show("Select Modify first");
             }
+
         }
 
         private void button1_Click(object sender, RoutedEventArgs e)
         {
-           if(radioButton1.IsChecked==true)
+           if(radioButton.IsChecked==true)
             {
                 try
                 {
                     conn.Open();
                     int ctid = Convert.ToInt32(comboBox.SelectedItem);
-                    MySqlCommand cmd = new MySqlCommand("delete from countires where ctid=" + ctid, conn);
+                    string cntnm = textBox1.Text;
+                    MySqlCommand cmd = new MySqlCommand("delete from countries where CtID="+ctid+";", conn);
                     MySqlDataReader dr = cmd.ExecuteReader();
+                    while (dr.Read())
+                    {
+                        var valen = dr["CtID"];
+                        if (!comboBox.Items.Contains(valen))
+                        {
+                            comboBox.Items.Add(valen);
+                        }
+                    }
+                    MessageBox.Show("Successfully updated");
                 }
                 catch (MySqlException ex)
                 {

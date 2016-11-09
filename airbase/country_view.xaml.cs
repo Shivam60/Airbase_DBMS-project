@@ -29,11 +29,11 @@ namespace airbase
 
         private void Window_Loaded(object sender, RoutedEventArgs e)
         {
-            MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=shivam;Database=chawlaairbase");
+            MySqlConnection conn = new MySqlConnection("Server=localhost;userid=root;password=dharmendra;Database=chawlaairbase");
             try
             {
                 conn.Open();
-                MySqlCommand cmd = new MySqlCommand("Select * from country", conn);
+                MySqlCommand cmd = new MySqlCommand("Select * from countries", conn);
                 MySqlDataAdapter adp = new MySqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adp.Fill(ds, "LoadDataBinding");
